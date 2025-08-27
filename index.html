@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Startup Landing Page</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Header / Hero -->
+  <header id="home" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+    <div class="container mx-auto flex justify-between items-center p-6">
+      <h1 class="text-2xl font-bold">TechStartup</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+          <li><a href="#features" class="hover:text-gray-300">Features</a></li>
+          <li><a href="#about" class="hover:text-gray-300">About</a></li>
+          <li><a href="#testimonials" class="hover:text-gray-300">Testimonials</a></li>
+          <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="text-center py-20" data-aos="fade-up">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Innovate. Build. Scale.</h2>
+      <p class="text-lg mb-6">Empowering startups with cutting-edge solutions.</p>
+      <a href="#contact" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-200 transition">Get Started</a>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section id="features" class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-10">Our Features</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition" data-aos="zoom-in">
+          <i class="fas fa-bolt text-4xl text-blue-600 mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">Fast Performance</h4>
+          <p>Lightning-fast solutions designed for modern businesses.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fas fa-lock text-4xl text-blue-600 mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">Secure Platform</h4>
+          <p>Enterprise-grade security to protect your data and apps.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="400">
+          <i class="fas fa-users text-4xl text-blue-600 mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">User Friendly</h4>
+          <p>Intuitive designs that are easy for everyone to use.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto grid md:grid-cols-2 gap-8 items-center">
+      <div data-aos="fade-right">
+        <img src="images/image1.png" alt="About Startup" class="rounded-lg shadow">
+      </div>
+      <div data-aos="fade-left">
+        <h3 class="text-3xl font-bold mb-4">About Us</h3>
+        <p class="mb-4">We are a passionate team dedicated to delivering innovative technology solutions. Our mission is to help startups scale faster and smarter.</p>
+        <p>With a focus on performance, security, and user experience, we build products that empower businesses worldwide.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-10">What Our Clients Say</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow" data-aos="flip-left">
+          <p class="italic">"This platform transformed our business operations. Highly recommended!"</p>
+          <h4 class="mt-4 font-semibold">— Sarah Khan</h4>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow" data-aos="flip-left" data-aos-delay="200">
+          <p class="italic">"Excellent team, great support, and outstanding results every time."</p>
+          <h4 class="mt-4 font-semibold">— John Smith</h4>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow" data-aos="flip-left" data-aos-delay="400">
+          <p class="italic">"Secure, fast, and reliable. Exactly what we needed for our startup."</p>
+          <h4 class="mt-4 font-semibold">— Ayesha Ali</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-8">Get in Touch</h3>
+      <form id="contactForm" class="max-w-xl mx-auto space-y-4">
+        <input type="text" id="name" placeholder="Your Name" class="w-full p-3 border rounded" required>
+        <input type="email" id="email" placeholder="Your Email" class="w-full p-3 border rounded" required>
+        <textarea id="message" rows="5" placeholder="Your Message" class="w-full p-3 border rounded" required></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-6">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+      <p>&copy; 2025 TechStartup. All rights reserved.</p>
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS & Custom JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
